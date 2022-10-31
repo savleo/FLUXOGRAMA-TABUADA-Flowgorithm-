@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Savio-PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-31 11:23:01 "/>
+        <attribute name="created" value="U2F2aW8tUEM7REVTS1RPUC0xQU03VElFOzIwMjItMTAtMzE7IjEwOjE1OjQzICI7Mjk0MQ=="/>
+        <attribute name="edited" value="U2F2aW8tUEM7REVTS1RPUC0xQU03VElFOzIwMjItMTAtMzE7IjExOjIzOjAxICI7NTszMDQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, t, conta" type="Integer" array="False" size=""/>
+            <assign variable="n" expression="-1"/>
+            <output expression="&quot;ESCREVA O N&#218;MERO DO QUAL DESEJA A TABUADA (1 A 10): &quot;" newline="True"/>
+            <input variable="t"/>
+            <output expression="&quot;TABELA DO N&#218;MERO:&quot; &amp; t" newline="True"/>
+            <while expression="n&lt;=9">
+                <assign variable="n" expression="n+1"/>
+                <assign variable="conta" expression="t*n"/>
+                <output expression="t &amp; &quot; x &quot; &amp; n &amp; &quot; = &quot; &amp; conta" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
